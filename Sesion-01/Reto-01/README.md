@@ -9,7 +9,7 @@
 
 ### 2. Requisitos :clipboard:
 
-1. MySQL Workbench instalado.
+1. MySQL Workbench instalado (Sin embargo hice uso de `JetBrains DataGrip` por comodidad).
 
 ### 3. Desarrollo :rocket:
 
