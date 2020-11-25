@@ -24,7 +24,7 @@
 
 Todas las consultas que realices deberás mantenerlas dentro del editor de textos de MySQL Workbench. Al finalizar, guarda este archivo, llendo al menú `File` > `Save script`. Recuerda que para hacer consultas a una tabla debes conocer primero su estructura.
 
-**Deberás entregar el archivo `.sql` correspondiente**
+**Deberás entregar el archivo [`.sql`](https://github.com/begeistert/Bedu/blob/main/Sesion-01/Ejercicios.sql) correspondiente**
 
 1. Dentro del mismo servidor de bases de datos, conéctate al esquema `classicmodels`.
 
@@ -237,3 +237,5 @@ LIMIT 5;
 ```
 
 </div>
+
+###### Iván Montiel Cardona
