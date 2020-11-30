@@ -14,6 +14,8 @@
 
 Usando la tabla `empleados`, escribe consultas que permitan responder las siguientes preguntas.
 
+---
+
 - ¿Cuál es el nombre de los empleados con el puesto 4?
 
 ```sql
@@ -42,6 +44,8 @@ WHERE id_puesto = 4;
 
 </p>
 </details>
+
+---
 
 - ¿Qué puestos tienen un salario mayor a $10,000?
 
@@ -1071,6 +1075,8 @@ WHERE salario > 10000;
 </p>
 </details>
 
+---
+
 - ¿Qué articulos tienen un precio mayor a $1,000 y un iva mayor a 100?
 
 ```sql
@@ -1087,6 +1093,8 @@ WHERE precio > 1000
     <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-01/Reto-02/Captura%203.png">
   </a>
 </p>
+
+---
 
 - ¿Qué ventas incluyen los artículos 135 o 963 y fueron hechas por los empleados 835 o 369?
 
