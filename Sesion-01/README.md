@@ -41,6 +41,38 @@ SELECT lastName
 FROM employees;              
 ```
 
+<details><summary>Resultado (Tabla)</summary>
+<p>
+	
+|#  |lastName                     |
+|---|-----------------------------|
+|1  |Murphy                       |
+|2  |Patterson                    |
+|3  |Firrelli                     |
+|4  |Patterson                    |
+|5  |Bondur                       |
+|6  |Bow                          |
+|7  |Jennings                     |
+|8  |Thompson                     |
+|9  |Firrelli                     |
+|10 |Patterson                    |
+|11 |Tseng                        |
+|12 |Vanauf                       |
+|13 |Bondur                       |
+|14 |Hernandez                    |
+|15 |Castillo                     |
+|16 |Bott                         |
+|17 |Jones                        |
+|18 |Fixter                       |
+|19 |Marsh                        |
+|20 |King                         |
+|21 |Nishi                        |
+|22 |Kato                         |
+|23 |Gerard                       |
+
+</p>
+</details>
+
 3. Dentro de la tabla `employees`, obtén el apellido, nombre y puesto de todos los empleados.
 
 ```sql
@@ -48,6 +80,39 @@ FROM employees;
 SELECT lastName,firstName,jobTitle 
 FROM employees;                
 ```
+
+
+<details><summary>Resultado (Tabla)</summary>
+<p>
+	
+|#  |lastName |firstName|jobTitle            |
+|---|---------|---------|--------------------|
+|1  |Murphy   |Diane    |President           |
+|2  |Patterson|Mary     |VP Sales            |
+|3  |Firrelli |Jeff     |VP Marketing        |
+|4  |Patterson|William  |Sales Manager (APAC)|
+|5  |Bondur   |Gerard   |Sale Manager (EMEA) |
+|6  |Bow      |Anthony  |Sales Manager (NA)  |
+|7  |Jennings |Leslie   |Sales Rep           |
+|8  |Thompson |Leslie   |Sales Rep           |
+|9  |Firrelli |Julie    |Sales Rep           |
+|10 |Patterson|Steve    |Sales Rep           |
+|11 |Tseng    |Foon Yue |Sales Rep           |
+|12 |Vanauf   |George   |Sales Rep           |
+|13 |Bondur   |Loui     |Sales Rep           |
+|14 |Hernandez|Gerard   |Sales Rep           |
+|15 |Castillo |Pamela   |Sales Rep           |
+|16 |Bott     |Larry    |Sales Rep           |
+|17 |Jones    |Barry    |Sales Rep           |
+|18 |Fixter   |Andy     |Sales Rep           |
+|19 |Marsh    |Peter    |Sales Rep           |
+|20 |King     |Tom      |Sales Rep           |
+|21 |Nishi    |Mami     |Sales Rep           |
+|22 |Kato     |Yoshimi  |Sales Rep           |
+|23 |Gerard   |Martin   |Sales Rep           |
+
+</p>
+</details>
 
 4. Dentro de la tabla `employees`, obtén todos los datos de cada empleado.
 
@@ -238,4 +303,4 @@ LIMIT 5;
 
 </div>
 
-###### Iván Montiel Cardona
+###### [Iván Montiel Cardona](https://github.com/begeistert)
