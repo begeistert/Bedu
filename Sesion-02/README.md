@@ -867,3 +867,7 @@ GROUP BY state;
 </details>
 
 <br/>
+
+</div>
+
+###### [Iván Montiel Cardona](https://github.com/begeistert)
