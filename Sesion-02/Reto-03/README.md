@@ -18,9 +18,10 @@ Usando la base de datos `tienda`, escribe consultas que permitan responder las s
 
 ```sql
 # Respuesta
-SELECT nombre
-FROM empleado
-WHERE id_puesto = 4;                  
+SELECT nombre, count(*) cantidad
+FROM puesto
+GROUP BY nombre
+ORDER BY cantidad DESC;                
 ```
 <details><summary>Resultado (Tabla)</summary>
 <p>
@@ -36,9 +37,10 @@ WHERE id_puesto = 4;
 
 ```sql
 # Respuesta
-SELECT nombre
-FROM empleado
-WHERE id_puesto = 4;                  
+SELECT nombre, sum(salario) total
+FROM puesto
+GROUP BY nombre
+ORDER BY total DESC;                 
 ```
 <details><summary>Resultado (Tabla)</summary>
 <p>
@@ -54,9 +56,10 @@ WHERE id_puesto = 4;
 
 ```sql
 # Respuesta
-SELECT nombre
-FROM empleado
-WHERE id_puesto = 4;                  
+SELECT id_empleado, count(*) cantidad
+FROM venta
+GROUP BY id_empleado
+ORDER BY cantidad DESC;                 
 ```
 <details><summary>Resultado (Tabla)</summary>
 <p>
@@ -72,9 +75,10 @@ WHERE id_puesto = 4;
 
 ```sql
 # Respuesta
-SELECT nombre
-FROM empleado
-WHERE id_puesto = 4;                  
+SELECT id_articulo, count(*) cantidad
+FROM venta
+GROUP BY id_articulo
+ORDER BY cantidad DESC;                
 ```
 <details><summary>Resultado (Tabla)</summary>
 <p>
