@@ -15,8 +15,59 @@
 Usando la base de datos `tienda`, escribe consultas que permitan responder las siguientes preguntas.
 
 - ¿Qué artículos incluyen la palabra `Pasta` en su nombre?
+
+
+```sql
+# Respuesta
+SELECT nombre
+FROM empleado
+WHERE id_puesto = 4;                  
+```
+<details><summary>Resultado (Tabla)</summary>
+<p>
+
+
+
+</p>
+</details>
+
+---
+
 - ¿Qué artículos incluyen la palabra `Cannelloni` en su nombre?
+
+
+```sql
+# Respuesta
+SELECT nombre
+FROM empleado
+WHERE id_puesto = 4;                  
+```
+<details><summary>Resultado (Tabla)</summary>
+<p>
+
+
+
+</p>
+</details>
+
+---
+
 - ¿Qué nombres están separados por un guión (`-`) por ejemplo `Puree - Kiwi`?
+
+
+```sql
+# Respuesta
+SELECT nombre
+FROM empleado
+WHERE id_puesto = 4;                  
+```
+<details><summary>Resultado (Tabla)</summary>
+<p>
+
+
+
+</p>
+</details>
 
 <br/>
 
