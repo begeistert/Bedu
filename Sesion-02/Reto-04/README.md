@@ -66,8 +66,6 @@ WHERE id_puesto = 4;
 </p>
 </details>
 
----
-
 <br/>
 
 ###### [Iván Montiel Cardona](https://github.com/begeistert)
