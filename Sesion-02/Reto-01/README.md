@@ -1,14 +1,21 @@
-## Módulo: Introducción a Bases de Datos
+## Reto 1: Agrupamientos y subconsultas
 
-### Contenido
+<div style="text-align: justify;">
 
-* [Sesión 1: Fundamentos de SQL (*Ejercicios*)](Sesion-01)  
- 	* [Reto 1](Sesion-01/Reto-01)
-  * [Reto 2](Sesion-01/Reto-02)
-  * [Reto 3](Sesion-01/Reto-03)
-* [Sesión 2: Agrupaciones y subconsultas (*Ejercicios*)](Sesion-01)  
- 	* [Reto 1](Sesion-01/Reto-01)
-  * [Reto 2](Sesion-01/Reto-02)
-  * [Reto 3](Sesion-01/Reto-03)
-  * [Reto 4](Sesion-01/Reto-03)
+### 1. Objetivos :dart:
 
+- Escribir consultas que permitan responder a algunas preguntas.
+
+### 2. Requisitos :clipboard:
+
+1. MySQL Workbench instalado.
+
+### 3. Desarrollo :rocket:
+
+Usando la base de datos `tienda`, escribe consultas que permitan responder las siguientes preguntas.
+
+- ¿Qué artículos incluyen la palabra `Pasta` en su nombre?
+- ¿Qué artículos incluyen la palabra `Cannelloni` en su nombre?
+- ¿Qué nombres están separados por un guión (`-`) por ejemplo `Puree - Kiwi`?
+
+<br/>
