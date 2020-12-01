@@ -8,7 +8,7 @@
 
 ### 2. Requisitos :clipboard:
 
-1. MySQL Workbench instalado y conectado al servidor del curso (Sin embargo hice uso de `JetBrains DataGrip` por comodidad).
+1. MySQL Workbench instalado y conectado al servidor del curso (Sin embargo hice uso de [`JetBrains DataGrip`](https://www.jetbrains.com/datagrip/) por comodidad).
 
 ### 3. Desarrollo :rocket:
 
