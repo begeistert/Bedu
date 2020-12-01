@@ -26,4 +26,4 @@ Usando la base de datos `tienda`, muestra la descripción de las tablas `articul
 
 </div>
 
-###### Iván Montiel Cardona
+###### [Iván Montiel Cardona](https://github.com/begeistert)
