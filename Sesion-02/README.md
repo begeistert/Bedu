@@ -12,7 +12,7 @@
 
 ### 3. Desarrollo :rocket:
 
-Todas las consultas que realices deberás mantenerlas dentro del editor de textos de MySQL Workbench. Al finalizar, guarda este archivo, llendo al menú `File` > `Save script`. 
+Todas las consultas que realices deberás mantenerlas dentro del editor de textos de MySQL Workbench. Al finalizar, guarda este [archivo](ejercicios-02.sql), llendo al menú `File` > `Save script`. 
 
 1. Dentro de la tabla `employees`, obten el número de empleado, apellido y nombre de todos los empleados cuyo nombre empiece con `A`.
 
