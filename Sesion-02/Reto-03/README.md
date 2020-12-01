@@ -84,7 +84,6 @@ WHERE id_puesto = 4;
 </p>
 </details>
 
----
 
 <br/>
 
