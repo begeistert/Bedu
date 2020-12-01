@@ -565,7 +565,11 @@ WHERE country NOT IN('USA', 'France');
 <details><summary>Resultado (Tabla)</summary>
 <p>
 
-
+|#  |officeCode|city  |phone           |country  |
+|---|----------|------|----------------|---------|
+|1  |5         |Tokyo |+81 33 224 5000 |Japan    |
+|2  |6         |Sydney|+61 2 9264 2451 |Australia|
+|3  |7         |London|+44 20 7877 2041|UK       |
 
 </p>
 </details>
@@ -583,7 +587,11 @@ WHERE orderNumber IN (10165,10287,10310);
 <details><summary>Resultado (Tabla)</summary>
 <p>
 
-
+|#  |orderNumber|customerNumber|status |shippedDate|
+|---|-----------|--------------|-------|-----------|
+|1  |10165      |148           |Shipped|2003-12-26 |
+|2  |10287      |298           |Shipped|2004-09-01 |
+|3  |10310      |259           |Shipped|2004-10-18 |
 
 </p>
 </details>
@@ -601,7 +609,130 @@ ORDER BY contactLastname;
 <details><summary>Resultado (Tabla)</summary>
 <p>
 
-
+|#  |contactLastName|customerName                      |
+|---|---------------|----------------------------------|
+|1  |Accorti        |Amica Models & Co.                |
+|2  |Altagar,G M    |Raanan Stores, Inc                |
+|3  |Andersen       |Der Hund Imports                  |
+|4  |Anton          |Anton Designs, Ltd.               |
+|5  |Ashworth       |AV Stores, Co.                    |
+|6  |Barajas        |Online Mini Collectables          |
+|7  |Benitez        |FunGiftIdeas.com                  |
+|8  |Bennett        |giftsbymail.co.uk                 |
+|9  |Berglund       |Volvo Model Replicas, Co          |
+|10 |Bergulfsen     |Baane Mini Imports                |
+|11 |Bertrand       |La Corne D'abondance, Co.         |
+|12 |Brown          |Corporate Gift Ideas Co.          |
+|13 |Brown          |Stylish Desk Decors, Co.          |
+|14 |Brown          |Tekni Collectables Inc.           |
+|15 |Calaghan       |Australian Gift Network, Co       |
+|16 |Camino         |ANG Resellers                     |
+|17 |Cartrain       |Royale Belge                      |
+|18 |Cassidy        |Clover Collections, Co.           |
+|19 |Cervantes      |Classic Gift Ideas, Inc           |
+|20 |Chandler       |Men 'R' US Retailers, Ltd.        |
+|21 |Choi           |Microscale Inc.                   |
+|22 |Citeaux        |Mini Caravy                       |
+|23 |Clenahan       |Australian Collectables, Ltd      |
+|24 |Cramer         |Cramer Spezialitäten, Ltd         |
+|25 |Cruz           |Cruz & Sons Co.                   |
+|26 |Da Silva       |Lyon Souveniers                   |
+|27 |de Castro      |Porto Imports Co.                 |
+|28 |Devon          |UK Collectables, Ltd.             |
+|29 |Dewey          |Petit Auto                        |
+|30 |Donnermeyer    |Bavarian Collectables Imports, Co.|
+|31 |Ferguson       |Australian Collectors, Co.        |
+|32 |Fernandez      |CAF Imports                       |
+|33 |Feuer          |Feuer Online Stores, Inc          |
+|34 |Franco         |American Souvenirs Inc            |
+|35 |Franco         |Diecast Collectables              |
+|36 |Franken        |Franken Gifts, Co                 |
+|37 |Fresnière      |Québec Home Shopping Network      |
+|38 |Freyre         |Euro+ Shopping Channel            |
+|39 |Frick          |Vitachrome Inc.                   |
+|40 |Frick          |Mini Classics                     |
+|41 |Frick          |The Sharp Gifts Warehouse         |
+|42 |Gao            |King Kong Collectables, Co.       |
+|43 |Graham         |Down Under Souveniers, Inc        |
+|44 |Harrison       |BG&E Collectables                 |
+|45 |Hashimoto      |Technics Stores Inc.              |
+|46 |Henriot        |Reims Collectables                |
+|47 |Hernandez      |Marta's Replicas Co.              |
+|48 |Hernandez      |Classic Legends Inc.              |
+|49 |Holz           |Vida Sport, Ltd                   |
+|50 |Huang          |Mini Creations Ltd.               |
+|51 |Huxley         |Souveniers And Things Co.         |
+|52 |Ibsen          |Heintze Collectables              |
+|53 |Josephs        |Kommission Auto                   |
+|54 |Karttunen      |Toys of Finland, Co.              |
+|55 |Keitel         |Blauer See Auto, Co.              |
+|56 |Kentary        |Osaka Souveniers Co.              |
+|57 |King           |Signal Gift Stores                |
+|58 |King           |Gift Depot Inc.                   |
+|59 |Klaeboe        |Norway Gifts By Mail, Co.         |
+|60 |Kloss          |Natürlich Autos                   |
+|61 |Koskitalo      |Oulu Toy Supplies, Inc.           |
+|62 |Kuger          |SAR Distributors, Co              |
+|63 |Labrune        |La Rochelle Gifts                 |
+|64 |Larsson        |Scandinavian Gift Ideas           |
+|65 |Lebihan        |Marseille Mini Autos              |
+|66 |Lee            |Land of Toys Inc.                 |
+|67 |Leong          |Diecast Classics Inc.             |
+|68 |Lewis          |Gift Ideas Corp.                  |
+|69 |Lincoln        |Royal Canadian Collectables, Ltd. |
+|70 |MacKinlay      |GiftsForHim.com                   |
+|71 |McKenna        |Asian Treasures, Inc.             |
+|72 |McRoy          |Extreme Desk Decorations, Ltd     |
+|73 |Mendel         |Mini Auto Werke                   |
+|74 |Messner        |Messner Shopping Network          |
+|75 |Moos           |Mit Vergnügen & Co.               |
+|76 |Moroni         |L'ordine Souveniers               |
+|77 |Murphy         |Mini Wheels Co.                   |
+|78 |Murphy         |Super Scale Inc.                  |
+|79 |Müller         |Stuttgart Collectable Exchange    |
+|80 |Natividad      |Dragon Souveniers, Ltd.           |
+|81 |Nelson         |Mini Gifts Distributors Ltd.      |
+|82 |Nelson         |Collectables For Less Inc.        |
+|83 |O'Hara         |Anna's Decorations, Ltd           |
+|84 |Oeztan         |Herkku Gifts                      |
+|85 |Ottlieb        |Warburg Exchange                  |
+|86 |Perrier        |Auto Canal+ Petit                 |
+|87 |Petersen       |Danish Wholesale Imports          |
+|88 |Pfalzheim      |Toms Spezialitäten, Ltd           |
+|89 |Piestrzeniewicz|Havel & Zbyszek Co                |
+|90 |Pipps          |Salzburg Collectables             |
+|91 |Rancé          |Daedalus Designs Imports          |
+|92 |Ricotti        |Frau da Collezione                |
+|93 |Rodriguez      |Lisboa Souveniers, Inc            |
+|94 |Roel           |Iberia Gift Imports, Corp.        |
+|95 |Roulet         |Alpha Cognac                      |
+|96 |Rovelli        |Rovelli Gifts                     |
+|97 |Saavedra       |Enaco Distributors                |
+|98 |Salazar        |Motor Mint Distributors Inc.      |
+|99 |Saveley        |Saveley & Henriot, Co.            |
+|100|Schmitt        |Atelier graphique                 |
+|101|Schuyler       |Schuyler Imports                  |
+|102|Semenov        |Kremlin Collectables, Co.         |
+|103|Shimamura      |Tokyo Collectables, Ltd           |
+|104|Smith          |Double Decker Gift Stores, Ltd    |
+|105|Snowden        |Kelly's Gift Shop                 |
+|106|Sommer         |Corrida Auto Replicas, Ltd        |
+|107|Suominen       |Suominen Souveniers               |
+|108|Tamuri         |Canadian Gift Exchange Network    |
+|109|Taylor         |Auto-Moto Classics Inc.           |
+|110|Taylor         |Signal Collectibles Ltd.          |
+|111|Thompson       |Collectable Mini Designs Co.      |
+|112|Thompson       |West Coast Collectables Co.       |
+|113|Tonini         |Auto Associés & Cie.              |
+|114|Tseng          |Cambridge Collectables Co.        |
+|115|Urs            |Precious Collectables             |
+|116|Victorino      |Handji Gifts& Co                  |
+|117|Walker         |Asian Shopping Network, Co        |
+|118|Yoshido        |Gifts4AllAges.com                 |
+|119|Young          |Muscle Machine Inc                |
+|120|Young          |Toys4GrownUps.com                 |
+|121|Young          |Boards & Toys Co.                 |
+|122|Young          |Online Diecast Creations Co.      |
 
 </p>
 </details>
@@ -619,7 +750,130 @@ ORDER BY contactLastName DESC;
 <details><summary>Resultado (Tabla)</summary>
 <p>
 
-
+|#  |contactLastName|customerName                      |
+|---|---------------|----------------------------------|
+|1  |Young          |Muscle Machine Inc                |
+|2  |Young          |Toys4GrownUps.com                 |
+|3  |Young          |Boards & Toys Co.                 |
+|4  |Young          |Online Diecast Creations Co.      |
+|5  |Yoshido        |Gifts4AllAges.com                 |
+|6  |Walker         |Asian Shopping Network, Co        |
+|7  |Victorino      |Handji Gifts& Co                  |
+|8  |Urs            |Precious Collectables             |
+|9  |Tseng          |Cambridge Collectables Co.        |
+|10 |Tonini         |Auto Associés & Cie.              |
+|11 |Thompson       |Collectable Mini Designs Co.      |
+|12 |Thompson       |West Coast Collectables Co.       |
+|13 |Taylor         |Auto-Moto Classics Inc.           |
+|14 |Taylor         |Signal Collectibles Ltd.          |
+|15 |Tamuri         |Canadian Gift Exchange Network    |
+|16 |Suominen       |Suominen Souveniers               |
+|17 |Sommer         |Corrida Auto Replicas, Ltd        |
+|18 |Snowden        |Kelly's Gift Shop                 |
+|19 |Smith          |Double Decker Gift Stores, Ltd    |
+|20 |Shimamura      |Tokyo Collectables, Ltd           |
+|21 |Semenov        |Kremlin Collectables, Co.         |
+|22 |Schuyler       |Schuyler Imports                  |
+|23 |Schmitt        |Atelier graphique                 |
+|24 |Saveley        |Saveley & Henriot, Co.            |
+|25 |Salazar        |Motor Mint Distributors Inc.      |
+|26 |Saavedra       |Enaco Distributors                |
+|27 |Rovelli        |Rovelli Gifts                     |
+|28 |Roulet         |Alpha Cognac                      |
+|29 |Roel           |Iberia Gift Imports, Corp.        |
+|30 |Rodriguez      |Lisboa Souveniers, Inc            |
+|31 |Ricotti        |Frau da Collezione                |
+|32 |Rancé          |Daedalus Designs Imports          |
+|33 |Pipps          |Salzburg Collectables             |
+|34 |Piestrzeniewicz|Havel & Zbyszek Co                |
+|35 |Pfalzheim      |Toms Spezialitäten, Ltd           |
+|36 |Petersen       |Danish Wholesale Imports          |
+|37 |Perrier        |Auto Canal+ Petit                 |
+|38 |Ottlieb        |Warburg Exchange                  |
+|39 |Oeztan         |Herkku Gifts                      |
+|40 |O'Hara         |Anna's Decorations, Ltd           |
+|41 |Nelson         |Mini Gifts Distributors Ltd.      |
+|42 |Nelson         |Collectables For Less Inc.        |
+|43 |Natividad      |Dragon Souveniers, Ltd.           |
+|44 |Müller         |Stuttgart Collectable Exchange    |
+|45 |Murphy         |Mini Wheels Co.                   |
+|46 |Murphy         |Super Scale Inc.                  |
+|47 |Moroni         |L'ordine Souveniers               |
+|48 |Moos           |Mit Vergnügen & Co.               |
+|49 |Messner        |Messner Shopping Network          |
+|50 |Mendel         |Mini Auto Werke                   |
+|51 |McRoy          |Extreme Desk Decorations, Ltd     |
+|52 |McKenna        |Asian Treasures, Inc.             |
+|53 |MacKinlay      |GiftsForHim.com                   |
+|54 |Lincoln        |Royal Canadian Collectables, Ltd. |
+|55 |Lewis          |Gift Ideas Corp.                  |
+|56 |Leong          |Diecast Classics Inc.             |
+|57 |Lee            |Land of Toys Inc.                 |
+|58 |Lebihan        |Marseille Mini Autos              |
+|59 |Larsson        |Scandinavian Gift Ideas           |
+|60 |Labrune        |La Rochelle Gifts                 |
+|61 |Kuger          |SAR Distributors, Co              |
+|62 |Koskitalo      |Oulu Toy Supplies, Inc.           |
+|63 |Kloss          |Natürlich Autos                   |
+|64 |Klaeboe        |Norway Gifts By Mail, Co.         |
+|65 |King           |Signal Gift Stores                |
+|66 |King           |Gift Depot Inc.                   |
+|67 |Kentary        |Osaka Souveniers Co.              |
+|68 |Keitel         |Blauer See Auto, Co.              |
+|69 |Karttunen      |Toys of Finland, Co.              |
+|70 |Josephs        |Kommission Auto                   |
+|71 |Ibsen          |Heintze Collectables              |
+|72 |Huxley         |Souveniers And Things Co.         |
+|73 |Huang          |Mini Creations Ltd.               |
+|74 |Holz           |Vida Sport, Ltd                   |
+|75 |Hernandez      |Marta's Replicas Co.              |
+|76 |Hernandez      |Classic Legends Inc.              |
+|77 |Henriot        |Reims Collectables                |
+|78 |Hashimoto      |Technics Stores Inc.              |
+|79 |Harrison       |BG&E Collectables                 |
+|80 |Graham         |Down Under Souveniers, Inc        |
+|81 |Gao            |King Kong Collectables, Co.       |
+|82 |Frick          |Vitachrome Inc.                   |
+|83 |Frick          |Mini Classics                     |
+|84 |Frick          |The Sharp Gifts Warehouse         |
+|85 |Freyre         |Euro+ Shopping Channel            |
+|86 |Fresnière      |Québec Home Shopping Network      |
+|87 |Franken        |Franken Gifts, Co                 |
+|88 |Franco         |American Souvenirs Inc            |
+|89 |Franco         |Diecast Collectables              |
+|90 |Feuer          |Feuer Online Stores, Inc          |
+|91 |Fernandez      |CAF Imports                       |
+|92 |Ferguson       |Australian Collectors, Co.        |
+|93 |Donnermeyer    |Bavarian Collectables Imports, Co.|
+|94 |Dewey          |Petit Auto                        |
+|95 |Devon          |UK Collectables, Ltd.             |
+|96 |de Castro      |Porto Imports Co.                 |
+|97 |Da Silva       |Lyon Souveniers                   |
+|98 |Cruz           |Cruz & Sons Co.                   |
+|99 |Cramer         |Cramer Spezialitäten, Ltd         |
+|100|Clenahan       |Australian Collectables, Ltd      |
+|101|Citeaux        |Mini Caravy                       |
+|102|Choi           |Microscale Inc.                   |
+|103|Chandler       |Men 'R' US Retailers, Ltd.        |
+|104|Cervantes      |Classic Gift Ideas, Inc           |
+|105|Cassidy        |Clover Collections, Co.           |
+|106|Cartrain       |Royale Belge                      |
+|107|Camino         |ANG Resellers                     |
+|108|Calaghan       |Australian Gift Network, Co       |
+|109|Brown          |Corporate Gift Ideas Co.          |
+|110|Brown          |Stylish Desk Decors, Co.          |
+|111|Brown          |Tekni Collectables Inc.           |
+|112|Bertrand       |La Corne D'abondance, Co.         |
+|113|Bergulfsen     |Baane Mini Imports                |
+|114|Berglund       |Volvo Model Replicas, Co          |
+|115|Bennett        |giftsbymail.co.uk                 |
+|116|Benitez        |FunGiftIdeas.com                  |
+|117|Barajas        |Online Mini Collectables          |
+|118|Ashworth       |AV Stores, Co.                    |
+|119|Anton          |Anton Designs, Ltd.               |
+|120|Andersen       |Der Hund Imports                  |
+|121|Altagar,G M    |Raanan Stores, Inc                |
+|122|Accorti        |Amica Models & Co.                |
 
 </p>
 </details>
@@ -637,7 +891,130 @@ ORDER BY contactLastName DESC, contactFirstName;
 <details><summary>Resultado (Tabla)</summary>
 <p>
 
-
+|#  |customerNumber|contactFirstName|
+|---|--------------|----------------|
+|1  |363           |Dorothy         |
+|2  |151           |Jeff            |
+|3  |205           |Julie           |
+|4  |219           |Mary            |
+|5  |362           |Juri            |
+|6  |206           |Brydey          |
+|7  |166           |Wendy           |
+|8  |376           |Braun           |
+|9  |173           |Jerry           |
+|10 |256           |Daniel          |
+|11 |475           |Steve           |
+|12 |239           |Valarie         |
+|13 |198           |Leslie          |
+|14 |487           |Sue             |
+|15 |202           |Yoshi           |
+|16 |334           |Kalle           |
+|17 |458           |Martín          |
+|18 |496           |Tony            |
+|19 |489           |Thomas          |
+|20 |398           |Akiko           |
+|21 |480           |Alexander       |
+|22 |303           |Bradley         |
+|23 |103           |Carine          |
+|24 |146           |Mary            |
+|25 |486           |Rosa            |
+|26 |216           |Eduardo         |
+|27 |278           |Giovanni        |
+|28 |242           |Annette         |
+|29 |484           |José Pedro      |
+|30 |369           |Lino            |
+|31 |473           |Franco          |
+|32 |171           |Martine         |
+|33 |382           |Georg           |
+|34 |125           |Zbyszek         |
+|35 |259           |Henriette       |
+|36 |145           |Jytte           |
+|37 |406           |Dominique       |
+|38 |459           |Sven            |
+|39 |167           |Veysel          |
+|40 |276           |Anna            |
+|41 |379           |Allen           |
+|42 |124           |Susan           |
+|43 |148           |Eric            |
+|44 |409           |Rita            |
+|45 |129           |Julie           |
+|46 |455           |Leslie          |
+|47 |386           |Maurizio        |
+|48 |477           |Hanna           |
+|49 |247           |Renate          |
+|50 |452           |Roland          |
+|51 |412           |Sarah           |
+|52 |348           |Patricia        |
+|53 |357           |Wales           |
+|54 |260           |Elizabeth       |
+|55 |447           |Dan             |
+|56 |157           |Kelvin          |
+|57 |131           |Kwai            |
+|58 |350           |Laurence        |
+|59 |448           |Martha          |
+|60 |119           |Janine          |
+|61 |356           |Armand          |
+|62 |311           |Pirkko          |
+|63 |223           |Horst           |
+|64 |299           |Jan             |
+|65 |112           |Jean            |
+|66 |175           |Julie           |
+|67 |177           |Mory            |
+|68 |128           |Roland          |
+|69 |186           |Matti           |
+|70 |361           |Karin           |
+|71 |227           |Palle           |
+|72 |282           |Adrian          |
+|73 |320           |Wing            |
+|74 |298           |Mihael          |
+|75 |424           |Maria           |
+|76 |286           |Marta           |
+|77 |353           |Paul            |
+|78 |161           |Juri            |
+|79 |293           |Ed              |
+|80 |323           |Mike            |
+|81 |211           |Mike            |
+|82 |181           |Michael         |
+|83 |319           |Steve           |
+|84 |450           |Sue             |
+|85 |141           |Diego           |
+|86 |233           |Jean            |
+|87 |273           |Peter           |
+|88 |168           |Keith           |
+|89 |495           |Valarie         |
+|90 |443           |Alexander       |
+|91 |344           |Jesus           |
+|92 |114           |Peter           |
+|93 |415           |Michael         |
+|94 |314           |Catherine       |
+|95 |201           |Elizabeth       |
+|96 |169           |Isabel          |
+|97 |250           |Daniel          |
+|98 |385           |Arnold          |
+|99 |335           |Philip          |
+|100|471           |Sean            |
+|101|209           |Frédérique      |
+|102|456           |Yu              |
+|103|347           |Brian           |
+|104|339           |Francisca       |
+|105|189           |Dean            |
+|106|381           |Pascale         |
+|107|237           |Alejandra       |
+|108|333           |Ben             |
+|109|324           |Ann             |
+|110|321           |Julie           |
+|111|328           |William         |
+|112|172           |Marie           |
+|113|121           |Jonas           |
+|114|144           |Christina       |
+|115|240           |Helen           |
+|116|462           |Violeta         |
+|117|204           |Miguel          |
+|118|187           |Rachel          |
+|119|465           |Carmen          |
+|120|307           |Mel             |
+|121|481           |Raanan          |
+|122|249           |Paolo           |
 
 </p>
 </details>
@@ -656,7 +1033,13 @@ LIMIT 5;
 <details><summary>Resultado (Tabla)</summary>
 <p>
 
-
+|#  |customerNumber|customerName                |creditLimit|
+|---|--------------|----------------------------|-----------|
+|1  |141           |Euro+ Shopping Channel      |227600.00  |
+|2  |124           |Mini Gifts Distributors Ltd.|210500.00  |
+|3  |298           |Vida Sport, Ltd             |141300.00  |
+|4  |151           |Muscle Machine Inc          |138500.00  |
+|5  |187           |AV Stores, Co.              |136800.00  |
 
 </p>
 </details>
@@ -676,7 +1059,13 @@ LIMIT 5;
 <details><summary>Resultado (Tabla)</summary>
 <p>
 
-
+|#  |customerNumber|customerName           |creditLimit|
+|---|--------------|-----------------------|-----------|
+|1  |219           |Boards & Toys Co.      |11000.00   |
+|2  |103           |Atelier graphique      |21000.00   |
+|3  |198           |Auto-Moto Classics Inc.|23000.00   |
+|4  |381           |Royale Belge           |23500.00   |
+|5  |473           |Frau da Collezione     |34800.00   |
 
 </p>
 </details>
