@@ -8,7 +8,7 @@
 
 ### 2. Requisitos :clipboard:
 
-1. MySQL Workbench instalado.
+1. MySQL Workbench instalado (Sin embargo hice uso de [`JetBrains DataGrip`](https://www.jetbrains.com/datagrip/) por comodidad).
 
 ### 3. Desarrollo :rocket:
 
@@ -20,3 +20,6 @@ Usando la base de datos `tienda`, escribe consultas que permitan responder las s
 - ¿Cuál es la suma del salario de los últimos cinco puestos agregados?
 
 <br/>
+
+
+###### [Iván Montiel Cardona](https://github.com/begeistert)
