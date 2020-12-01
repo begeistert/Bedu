@@ -15,9 +15,76 @@
 Usando la base de datos `tienda`, escribe consultas que permitan responder las siguientes preguntas.
 
 - ¿Cuántos registros hay por cada uno de los puestos?
+
+```sql
+# Respuesta
+SELECT nombre
+FROM empleado
+WHERE id_puesto = 4;                  
+```
+<details><summary>Resultado (Tabla)</summary>
+<p>
+
+
+
+</p>
+</details>
+
+---
+
 - ¿Cuánto dinero se paga en total por puesto?
+
+```sql
+# Respuesta
+SELECT nombre
+FROM empleado
+WHERE id_puesto = 4;                  
+```
+<details><summary>Resultado (Tabla)</summary>
+<p>
+
+
+
+</p>
+</details>
+
+---
+
 - ¿Cuál es el número total de ventas por vendedor?
+
+```sql
+# Respuesta
+SELECT nombre
+FROM empleado
+WHERE id_puesto = 4;                  
+```
+<details><summary>Resultado (Tabla)</summary>
+<p>
+
+
+
+</p>
+</details>
+
+---
+
 - ¿Cuál es el número total de ventas por artículo?
+
+```sql
+# Respuesta
+SELECT nombre
+FROM empleado
+WHERE id_puesto = 4;                  
+```
+<details><summary>Resultado (Tabla)</summary>
+<p>
+
+
+
+</p>
+</details>
+
+---
 
 <br/>
 
