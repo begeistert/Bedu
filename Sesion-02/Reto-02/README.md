@@ -18,14 +18,15 @@ Usando la base de datos `tienda`, escribe consultas que permitan responder las s
 
 ```sql
 # Respuesta
-SELECT nombre
-FROM empleado
-WHERE id_puesto = 4;                  
+SELECT avg(salario)
+FROM puesto;                
 ```
 <details><summary>Resultado (Tabla)</summary>
 <p>
 
-
+|#  |avg(salario)      |
+|---|------------------|
+|1  |19595.051179999973|
 
 </p>
 </details>
@@ -35,14 +36,16 @@ WHERE id_puesto = 4;
 
 ```sql
 # Respuesta
-SELECT nombre
-FROM empleado
-WHERE id_puesto = 4;                  
+SELECT count(*)
+FROM articulo
+WHERE nombre LIKE '%Pasta%';                
 ```
 <details><summary>Resultado (Tabla)</summary>
 <p>
 
-
+|#  |count(*)|
+|---|--------|
+|1  |17      |
 
 </p>
 </details>
@@ -53,14 +56,15 @@ WHERE id_puesto = 4;
 
 ```sql
 # Respuesta
-SELECT nombre
-FROM empleado
-WHERE id_puesto = 4;                  
+SELECT min(salario), max(salario)
+FROM puesto;                  
 ```
 <details><summary>Resultado (Tabla)</summary>
 <p>
 
-
+|#  |min(salario)|max(salario)|
+|---|------------|------------|
+|1  |10013.44    |29996.58    |
 
 </p>
 </details>
@@ -71,14 +75,20 @@ WHERE id_puesto = 4;
 
 ```sql
 # Respuesta
-SELECT nombre
-FROM empleado
-WHERE id_puesto = 4;                  
+SELECT sum(salario)
+FROM (
+      SELECT *
+      FROM puesto
+      ORDER BY id_puesto DESC
+      LIMIT 5
+     ) as TOP5;                
 ```
 <details><summary>Resultado (Tabla)</summary>
 <p>
 
-
+|#  |sum(salario)|
+|---|------------|
+|1  |79690.05    |
 
 </p>
 </details>
