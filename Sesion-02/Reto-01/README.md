@@ -19,9 +19,9 @@ Usando la base de datos `tienda`, escribe consultas que permitan responder las s
 
 ```sql
 # Respuesta
-SELECT nombre
-FROM empleado
-WHERE id_puesto = 4;                  
+SELECT *
+FROM articulo
+WHERE nombre LIKE '%Pasta%';                  
 ```
 <details><summary>Resultado (Tabla)</summary>
 <p>
@@ -38,9 +38,9 @@ WHERE id_puesto = 4;
 
 ```sql
 # Respuesta
-SELECT nombre
-FROM empleado
-WHERE id_puesto = 4;                  
+SELECT *
+FROM articulo
+WHERE nombre LIKE '%Cannelloni%';                 
 ```
 <details><summary>Resultado (Tabla)</summary>
 <p>
@@ -57,9 +57,9 @@ WHERE id_puesto = 4;
 
 ```sql
 # Respuesta
-SELECT nombre
-FROM empleado
-WHERE id_puesto = 4;                  
+SELECT *
+FROM articulo
+WHERE nombre LIKE '% - %';               
 ```
 <details><summary>Resultado (Tabla)</summary>
 <p>
