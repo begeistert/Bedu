@@ -32,16 +32,6 @@ ORDER BY o.orderNumber;
 ```
 <details><summary>Resultado (Tabla)</summary>
 <p>
-  
-<details><summary>Evidencia (Jetbrains DataGrip)</summary>
-<p>
-<br />
-<p align="center">
-  <a>
-    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-03/Captura-01.png">
-  </a>
-</p>
-</details>
 
 |#  |orderNumber|TotalProductos|
 |---|-----------|--------------|
@@ -391,16 +381,6 @@ ORDER BY od.orderNumber;
 ```
 <details><summary>Resultado (Tabla)</summary>
 <p>
-  
-<details><summary>Evidencia (Jetbrains DataGrip)</summary>
-<p>
-<br />
-<p align="center">
-  <a>
-    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-03/Captura-02.png">
-  </a>
-</p>
-</details>
 
 |#  |orderNumber|status    |CostoTotal|
 |---|-----------|----------|----------|
@@ -751,16 +731,6 @@ ORDER BY o.orderNumber;
 ```
 <details><summary>Resultado (Tabla)</summary>
 <p>
-  
-<details><summary>Evidencia (Jetbrains DataGrip)</summary>
-<p>
-<br />
-<p align="center">
-  <a>
-    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-03/Captura-03.png">
-  </a>
-</p>
-</details>
 
 |#   |orderNumber|orderDate |orderLineNumber|productName                                |quantityOrdered|priceEach|
 |----|-----------|----------|---------------|-------------------------------------------|---------------|---------|
@@ -3778,16 +3748,6 @@ JOIN products p
 ```
 <details><summary>Resultado (Tabla)</summary>
 <p>
-  
-<details><summary>Evidencia (Jetbrains DataGrip)</summary>
-<p>
-<br />
-<p align="center">
-  <a>
-    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-03/Captura-04.png">
-  </a>
-</p>
-</details>
 
 |#   |orderNumber|productName                                |PrecioSugerido|priceEach|
 |----|-----------|-------------------------------------------|--------------|---------|
@@ -6809,16 +6769,6 @@ ORDER BY c.customerNumber;
 ```
 <details><summary>Resultado (Tabla)</summary>
 <p>
-  
-<details><summary>Evidencia (Jetbrains DataGrip)</summary>
-<p>
-<br />
-<p align="center">
-  <a>
-    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-03/Captura-05.png">
-  </a>
-</p>
-</details>
 
 |#  |customerNumber|customerName                      |orderNumber|status    |
 |---|--------------|----------------------------------|-----------|----------|
@@ -7250,16 +7200,6 @@ ORDER BY Empleado;
 ```
 <details><summary>Resultado (Tabla)</summary>
 <p>
-  
-<details><summary>Evidencia (Jetbrains DataGrip)</summary>
-<p>
-<br />
-<p align="center">
-  <a>
-    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-03/Captura-07.png">
-  </a>
-</p>
-</details>
 
 |#  |Empleado         |customerName                      |checkNumber|amount   |
 |---|-----------------|----------------------------------|-----------|---------|
@@ -7565,20 +7505,32 @@ JOIN empleado e
   ON v.id_empleado = e.id_empleado
 ORDER BY clave;              
 ```
-<details><summary>Resultado (Tabla)</summary>
+<details><summary>Resultados</summary>
 <p>
-  
-<details><summary>Evidencia (Jetbrains DataGrip)</summary>
+
+<details><summary>Ejercicio 5</summary>
 <p>
-<br />
-<p align="center">
-  <a>
-    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-03/Reto-01/Captura-01.png">
-  </a>
+
+
+
 </p>
 </details>
 
+<details><summary>Ejercicio 6</summary>
+<p>
 
+
+
+</p>
+</details>
+
+<details><summary>Ejercicio 7</summary>
+<p>
+
+
+
+</p>
+</details>
 
 </p>
 </details>
@@ -7596,19 +7548,32 @@ JOIN empleado e
   ON v.id_empleado = e.id_empleado
 ORDER BY clave;              
 ```
-<details><summary>Resultado (Tabla)</summary>
+<details><summary>Resultados</summary>
 <p>
-  
-<details><summary>Evidencia (Jetbrains DataGrip)</summary>
+
+<details><summary>Ejercicio 3</summary>
 <p>
-<br />
-<p align="center">
-  <a>
-    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-03/Reto-01/Captura-01.png">
-  </a>
+
+
+
 </p>
 </details>
 
+<details><summary>Ejercicio 5</summary>
+<p>
+
+
+
+</p>
+</details>
+
+<details><summary>Ejercicio 7</summary>
+<p>
+
+
+
+</p>
+</details>
 
 
 </p>
