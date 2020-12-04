@@ -24,6 +24,16 @@ FROM puesto;
 <details><summary>Resultado (Tabla)</summary>
 <p>
 
+<details><summary>Evidencia (Jetbrains DataGrip)</summary>
+<p>
+<br />
+<p align="center">
+  <a>
+    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-02/Reto-02/Captura-01.png">
+  </a>
+</p>
+</details>
+
 |#  |avg(salario)      |
 |---|------------------|
 |1  |19595.051179999973|
@@ -43,6 +53,16 @@ WHERE nombre LIKE '%Pasta%';
 <details><summary>Resultado (Tabla)</summary>
 <p>
 
+<details><summary>Evidencia (Jetbrains DataGrip)</summary>
+<p>
+<br />
+<p align="center">
+  <a>
+    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-02/Reto-02/Captura-02.png">
+  </a>
+</p>
+</details>
+
 |#  |count(*)|
 |---|--------|
 |1  |17      |
@@ -61,6 +81,16 @@ FROM puesto;
 ```
 <details><summary>Resultado (Tabla)</summary>
 <p>
+
+<details><summary>Evidencia (Jetbrains DataGrip)</summary>
+<p>
+<br />
+<p align="center">
+  <a>
+    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-02/Reto-02/Captura-03.png">
+  </a>
+</p>
+</details>
 
 |#  |min(salario)|max(salario)|
 |---|------------|------------|
@@ -85,6 +115,16 @@ FROM (
 ```
 <details><summary>Resultado (Tabla)</summary>
 <p>
+
+<details><summary>Evidencia (Jetbrains DataGrip)</summary>
+<p>
+<br />
+<p align="center">
+  <a>
+    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-02/Reto-02/Captura-04.png">
+  </a>
+</p>
+</details>
 
 |#  |sum(salario)|
 |---|------------|
