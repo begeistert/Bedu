@@ -38,7 +38,7 @@ ORDER BY o.orderNumber;
 <br />
 <p align="center">
   <a>
-    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-03/Reto-01/Captura-01.png">
+    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-03/Captura-01.png">
   </a>
 </p>
 </details>
@@ -397,7 +397,7 @@ ORDER BY od.orderNumber;
 <br />
 <p align="center">
   <a>
-    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-03/Reto-01/Captura-01.png">
+    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-03/Captura-02.png">
   </a>
 </p>
 </details>
@@ -757,7 +757,7 @@ ORDER BY o.orderNumber;
 <br />
 <p align="center">
   <a>
-    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-03/Reto-01/Captura-01.png">
+    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-03/Captura-03.png">
   </a>
 </p>
 </details>
@@ -3784,7 +3784,7 @@ JOIN products p
 <br />
 <p align="center">
   <a>
-    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-03/Reto-01/Captura-01.png">
+    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-03/Captura-04.png">
   </a>
 </p>
 </details>
@@ -6815,7 +6815,7 @@ ORDER BY c.customerNumber;
 <br />
 <p align="center">
   <a>
-    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-03/Reto-01/Captura-01.png">
+    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-03/Captura-05.png">
   </a>
 </p>
 </details>
@@ -7198,7 +7198,7 @@ ORDER BY c.customerNumber;
 <br />
 <p align="center">
   <a>
-    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-03/Reto-01/Captura-01.png">
+    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-03/Captura-06.png">
   </a>
 </p>
 </details>
@@ -7256,7 +7256,7 @@ ORDER BY Empleado;
 <br />
 <p align="center">
   <a>
-    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-03/Reto-01/Captura-01.png">
+    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-03/Captura-07.png">
   </a>
 </p>
 </details>
