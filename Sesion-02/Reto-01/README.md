@@ -26,6 +26,16 @@ WHERE nombre LIKE '%Pasta%';
 <details><summary>Resultado (Tabla)</summary>
 <p>
 
+<details><summary>Evidencia (Jetbrains DataGrip)</summary>
+<p>
+<br />
+<p align="center">
+  <a>
+    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-02/Reto-01/Captura-01.png">
+  </a>
+</p>
+</details>
+
 |#  |id_articulo|nombre                           |precio |iva    |cantidad|
 |---|-----------|---------------------------------|-------|-------|--------|
 |1  |2          |Pasta - Angel Hair               |4391.73|959.51 |503     |
@@ -63,6 +73,16 @@ WHERE nombre LIKE '%Cannelloni%';
 <details><summary>Resultado (Tabla)</summary>
 <p>
 
+<details><summary>Evidencia (Jetbrains DataGrip)</summary>
+<p>
+<br />
+<p align="center">
+  <a>
+    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-02/Reto-01/Captura-02.png">
+  </a>
+</p>
+</details>
+
 |#  |id_articulo|nombre                           |precio |iva   |cantidad|
 |---|-----------|---------------------------------|-------|------|--------|
 |1  |233        |Pasta - Cannelloni, Sheets, Fresh|2316.37|605.55|307     |
@@ -83,6 +103,16 @@ WHERE nombre LIKE '% - %';
 ```
 <details><summary>Resultado (Tabla)</summary>
 <p>
+
+<details><summary>Evidencia (Jetbrains DataGrip)</summary>
+<p>
+<br />
+<p align="center">
+  <a>
+    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-02/Reto-01/Captura-03.png">
+  </a>
+</p>
+</details>
 
 |#  |id_articulo|nombre                             |precio |iva    |cantidad|
 |---|-----------|-----------------------------------|-------|-------|--------|
