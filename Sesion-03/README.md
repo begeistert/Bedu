@@ -40,4 +40,4 @@ Todas las consultas que realices deberás mantenerlas dentro del editor de texto
 
 9. Escoge 3 consultas de los ejercicios anteriores, crea una vista y escribe una consulta para cada una.
 
-**¡¡¡MUCHA SUERTE!!!**
+###### [Iván Montiel Cardona](https://github.com/begeistert)
