@@ -19,3 +19,5 @@ Usando la base de datos `tienda`, define las siguientes vistas que permitan obte
 - Obtener el puesto de un empleado.
 - Saber qué artículos ha vendido cada empleado.
 - Saber qué puesto ha tenido más ventas.
+
+###### [Iván Montiel Cardona](https://github.com/begeistert)
