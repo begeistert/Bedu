@@ -29,6 +29,16 @@ WHERE id_puesto IN (
 <details><summary>Resultado (Tabla)</summary>
 <p>
 
+<details><summary>Evidencia (Jetbrains DataGrip)</summary>
+<p>
+<br />
+<p align="center">
+  <a>
+    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-02/Reto-04/Captura-01.png">
+  </a>
+</p>
+</details>
+
 |Kristien   |MacGiffin                |
 |-----------|-------------------------|
 |Killie     |Cosyns                   |
@@ -1050,6 +1060,17 @@ GROUP BY id_empleado;
 <details><summary>Resultado (Tabla)</summary>
 <p>
 
+
+<details><summary>Evidencia (Jetbrains DataGrip)</summary>
+<p>
+<br />
+<p align="center">
+  <a>
+    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-02/Reto-04/Captura-02.png">
+  </a>
+</p>
+</details>
+
 |#  |id_empleado|max(total_ventas)|min(total_ventas)|
 |---|-----------|-----------------|-----------------|
 |1  |569        |1                |1                |
@@ -1709,6 +1730,17 @@ FROM empleado AS e;
 ```
 <details><summary>Resultado (Tabla)</summary>
 <p>
+
+
+<details><summary>Evidencia (Jetbrains DataGrip)</summary>
+<p>
+<br />
+<p align="center">
+  <a>
+    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-02/Reto-04/Captura-03.png">
+  </a>
+</p>
+</details>
 
 |#   |nombre     |apellido_paterno         |puesto                              |
 |----|-----------|-------------------------|------------------------------------|
