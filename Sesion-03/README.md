@@ -23,11 +23,12 @@ Todas las consultas que realices deberás mantenerlas dentro del editor de texto
 
 ```sql
 # Respuesta
-SELECT v.id_empleado, clave, nombre, apellido_paterno
-FROM venta v
-JOIN empleado e
-  ON v.id_empleado = e.id_empleado
-ORDER BY clave;              
+SELECT o.orderNumber, SUM(od.quantityOrdered) TotalProductos
+FROM orderdetails od
+JOIN orders o
+	ON od.orderNumber = o.orderNumber
+GROUP BY o.orderNumber, o.status
+ORDER BY o.orderNumber;            
 ```
 <details><summary>Resultado (Tabla)</summary>
 <p>
@@ -54,11 +55,12 @@ ORDER BY clave;
 
 ```sql
 # Respuesta
-SELECT v.id_empleado, clave, nombre, apellido_paterno
-FROM venta v
-JOIN empleado e
-  ON v.id_empleado = e.id_empleado
-ORDER BY clave;              
+SELECT od.orderNumber, o.status, SUM(od.quantityOrdered*od.priceEach) CostoTotal
+FROM orderdetails od
+JOIN orders o
+	ON od.orderNumber = o.orderNumber
+GROUP BY od.orderNumber, o.status
+ORDER BY od.orderNumber;             
 ```
 <details><summary>Resultado (Tabla)</summary>
 <p>
@@ -85,11 +87,13 @@ ORDER BY clave;
 
 ```sql
 # Respuesta
-SELECT v.id_empleado, clave, nombre, apellido_paterno
-FROM venta v
-JOIN empleado e
-  ON v.id_empleado = e.id_empleado
-ORDER BY clave;              
+SELECT o.orderNumber, o.orderDate, od.orderLineNumber, p.productName, od.quantityOrdered, od.priceEach
+FROM products p
+JOIN orderdetails od
+	ON p.productCode = od.productCode
+JOIN orders o
+	ON od.orderNumber = o.orderNumber
+ORDER BY o.orderNumber;         
 ```
 <details><summary>Resultado (Tabla)</summary>
 <p>
@@ -116,11 +120,10 @@ ORDER BY clave;
 
 ```sql
 # Respuesta
-SELECT v.id_empleado, clave, nombre, apellido_paterno
-FROM venta v
-JOIN empleado e
-  ON v.id_empleado = e.id_empleado
-ORDER BY clave;              
+SELECT od.orderNumber, p.productName, p.MSRP PrecioSugerido, od.priceEach
+FROM orderdetails od
+JOIN products p
+	ON od.productCode = p.productCode;            
 ```
 <details><summary>Resultado (Tabla)</summary>
 <p>
@@ -149,11 +152,12 @@ ORDER BY clave;
 
 ```sql
 # Respuesta
-SELECT v.id_empleado, clave, nombre, apellido_paterno
-FROM venta v
-JOIN empleado e
-  ON v.id_empleado = e.id_empleado
-ORDER BY clave;              
+SELECT c.customerNumber, c.customerName, o.orderNumber, o.status
+FROM customers c #izquierda
+LEFT JOIN orders o #derecha
+	ON c.customerNumber = o.customerNumber
+ORDER BY c.customerNumber;
+# Se ocupa el LEFT JOIN para poder acceder a los datos de todos los clientes, incluso aquellos que no han realizado ninguna orden            
 ```
 <details><summary>Resultado (Tabla)</summary>
 <p>
@@ -180,11 +184,12 @@ ORDER BY clave;
 
 ```sql
 # Respuesta
-SELECT v.id_empleado, clave, nombre, apellido_paterno
-FROM venta v
-JOIN empleado e
-  ON v.id_empleado = e.id_empleado
-ORDER BY clave;              
+SELECT c.customerNumber, c.customerName
+FROM customers c
+LEFT JOIN orders o
+	ON c.customerNumber = o.customerNumber
+WHERE o.orderNumber IS NULL
+ORDER BY c.customerNumber;            
 ```
 <details><summary>Resultado (Tabla)</summary>
 <p>
@@ -211,11 +216,13 @@ ORDER BY clave;
 
 ```sql
 # Respuesta
-SELECT v.id_empleado, clave, nombre, apellido_paterno
-FROM venta v
-JOIN empleado e
-  ON v.id_empleado = e.id_empleado
-ORDER BY clave;              
+SELECT concat(e.lastName,' ',e.firstName) Empleado, c.customerName, p.checkNumber, p.amount
+FROM employees e
+LEFT JOIN customers c
+	ON e.employeeNumber = c.salesRepEmployeeNumber
+LEFT JOIN payments p
+	ON c.customerNumber = p.customerNumber
+ORDER BY Empleado;             
 ```
 <details><summary>Resultado (Tabla)</summary>
 <p>
