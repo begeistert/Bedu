@@ -25,6 +25,16 @@ ORDER BY cantidad DESC;
 ```
 <details><summary>Resultado (Tabla)</summary>
 <p>
+  
+<details><summary>Evidencia (Jetbrains DataGrip)</summary>
+<p>
+<br />
+<p align="center">
+  <a>
+    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-02/Reto-03/Captura-01.png">
+  </a>
+</p>
+</details>
 
 |#  |nombre                              |cantidad|
 |---|------------------------------------|--------|
@@ -227,6 +237,16 @@ ORDER BY total DESC;
 <details><summary>Resultado (Tabla)</summary>
 <p>
 
+<details><summary>Evidencia (Jetbrains DataGrip)</summary>
+<p>
+<br />
+<p align="center">
+  <a>
+    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-02/Reto-03/Captura-02.png">
+  </a>
+</p>
+</details>
+
 |#  |nombre                              |total             |
 |---|------------------------------------|------------------|
 |1  |Project Manager                     |319920.94999999995|
@@ -427,6 +447,16 @@ ORDER BY cantidad DESC;
 ```
 <details><summary>Resultado (Tabla)</summary>
 <p>
+
+<details><summary>Evidencia (Jetbrains DataGrip)</summary>
+<p>
+<br />
+<p align="center">
+  <a>
+    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-02/Reto-03/Captura-03.png">
+  </a>
+</p>
+</details>
 
 |#  |id_empleado|cantidad|
 |---|-----------|--------|
@@ -1089,6 +1119,16 @@ ORDER BY cantidad DESC;
 ```
 <details><summary>Resultado (Tabla)</summary>
 <p>
+
+<details><summary>Evidencia (Jetbrains DataGrip)</summary>
+<p>
+<br />
+<p align="center">
+  <a>
+    <img src="https://github.com/begeistert/Bedu/blob/main/Sesion-02/Reto-03/Captura-04.png">
+  </a>
+</p>
+</details>
 
 |#  |id_articulo|cantidad|
 |---|-----------|--------|
