@@ -199,7 +199,7 @@ JOIN orderdetails od
 	ON p.productCode = od.productCode
 JOIN orders o
 	ON od.orderNumber = o.orderNumber
-ORDER BY o.orderNumber;);
+ORDER BY o.orderNumber);
 
 Select NombreProducto, PrecioPorPieza
 FROM PreciosProductos_773
