@@ -126,22 +126,20 @@ ORDER BY Empleado;
 
 8. Repite los ejercicios 5 a 7 usando *RIGHT JOIN*. ¿Representan lo mismo? Explica las diferencias en un comentario. Para poner comentarios usa `--`.
 
-
-```sql
-# Respuesta
-SELECT v.id_empleado, clave, nombre, apellido_paterno
-FROM venta v
-JOIN empleado e
-  ON v.id_empleado = e.id_empleado
-ORDER BY clave;              
-```
 <details><summary>Resultados</summary>
 <p>
 
 <details><summary>Ejercicio 5</summary>
 <p>
 
-
+```sql
+# Respuesta
+SELECT c.customerNumber, c.customerName, o.orderNumber, o.status
+FROM orders o
+RIGHT JOIN customers c
+	ON c.customerNumber = o.customerNumber
+ORDER BY c.customerNumber;         
+```
 
 </p>
 </details>
@@ -149,7 +147,15 @@ ORDER BY clave;
 <details><summary>Ejercicio 6</summary>
 <p>
 
-
+```sql
+# Respuesta
+SELECT c.customerNumber, c.customerName
+FROM orders o
+RIGHT JOIN customers c
+	ON c.customerNumber = o.customerNumber
+WHERE o.orderNumber IS NULL
+ORDER BY c.customerNumber;           
+```
 
 </p>
 </details>
@@ -157,7 +163,16 @@ ORDER BY clave;
 <details><summary>Ejercicio 7</summary>
 <p>
 
-
+```sql
+# Respuesta
+SELECT concat(e.lastName,' ',e.firstName) Empleado, c.customerName, p.checkNumber, p.amount
+FROM payments p
+RIGHT JOIN customers c
+	ON p.customerNumber = c.customerNumber
+RIGHT JOIN employees e
+	ON c.salesRepEmployeeNumber = e.employeeNumber
+ORDER BY Empleado;            
+```
 
 </p>
 </details>
@@ -169,22 +184,24 @@ ORDER BY clave;
 
 9. Escoge 3 consultas de los ejercicios anteriores, crea una vista y escribe una consulta para cada una.
 
-
-```sql
-# Respuesta
-SELECT v.id_empleado, clave, nombre, apellido_paterno
-FROM venta v
-JOIN empleado e
-  ON v.id_empleado = e.id_empleado
-ORDER BY clave;              
-```
 <details><summary>Resultados</summary>
 <p>
 
 <details><summary>Ejercicio 3</summary>
 <p>
 
+```sql
+# Respuesta
+CREATE VIEW PreciosProductos_773 AS
+(SELECT od.orderNumber NumeroOrden, p.productName NombreProducto, p.MSRP PrecioSugerido, od.priceEach PrecioPorPieza
+FROM orderdetails od
+RIGHT JOIN products p
+	ON od.productCode = p.productCode);
 
+Select NombreProducto, PrecioSugerido
+FROM PreciosProductos_773
+ORDER BY PrecioSugerido;
+```
 
 </p>
 </details>
@@ -193,6 +210,18 @@ ORDER BY clave;
 <p>
 
 
+```sql
+# Respuesta
+CREATE VIEW IF NOT EXIST EstadoOrden_773 AS
+(SELECT c.customerNumber, c.customerName, o.orderNumber, o.status
+FROM customers c #izquierda
+LEFT JOIN orders o #derecha
+	ON c.customerNumber = o.customerNumber
+ORDER BY c.customerNumber);
+
+SELECT *
+FROM EstadoOrden_773;
+```
 
 </p>
 </details>
@@ -200,7 +229,19 @@ ORDER BY clave;
 <details><summary>Ejercicio 7</summary>
 <p>
 
+```sql
+CREATE VIEW IF NOT EXIST ClientesAsociados_773 AS
+(SELECT concat(e.lastName,' ',e.firstName) Empleado, c.customerName, p.checkNumber, p.amount
+FROM employees e
+LEFT JOIN customers c
+	ON e.employeeNumber = c.salesRepEmployeeNumber
+LEFT JOIN payments p
+	ON c.customerNumber = p.customerNumber
+ORDER BY Empleado);
 
+SELECT *
+FROM ClientesAsociados_773;
+```
 
 </p>
 </details>
