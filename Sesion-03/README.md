@@ -215,7 +215,7 @@ ORDER BY PrecioPorPieza;
 
 ```sql
 # Respuesta
-CREATE VIEW IF NOT EXIST EstadoOrden_773 AS
+CREATE VIEW EstadoOrden_773 AS
 (SELECT c.customerNumber, c.customerName CustomerName, o.orderNumber OrderNumber, o.status Status
 FROM customers c #izquierda
 LEFT JOIN orders o #derecha
@@ -233,7 +233,7 @@ FROM EstadoOrden_773;
 <p>
 
 ```sql
-CREATE VIEW IF NOT EXIST ClientesAsociados_773 AS
+CREATE VIEW ClientesAsociados_773 AS
 (SELECT concat(e.lastName,' ',e.firstName) Empleado, c.customerName Customer, p.checkNumber CheckNumber, p.amount Amount
 FROM employees e
 LEFT JOIN customers c
