@@ -193,14 +193,17 @@ ORDER BY Empleado;
 ```sql
 # Respuesta
 CREATE VIEW PreciosProductos_773 AS
-(SELECT od.orderNumber NumeroOrden, p.productName NombreProducto, p.MSRP PrecioSugerido, od.priceEach PrecioPorPieza
-FROM orderdetails od
-RIGHT JOIN products p
-	ON od.productCode = p.productCode);
+(SELECT o.orderNumber, o.orderDate, od.orderLineNumber, p.productName NombreProducto, od.quantityOrdered, od.priceEach PrecioPorPieza
+FROM products p
+JOIN orderdetails od
+	ON p.productCode = od.productCode
+JOIN orders o
+	ON od.orderNumber = o.orderNumber
+ORDER BY o.orderNumber;);
 
-Select NombreProducto, PrecioSugerido
+Select NombreProducto, PrecioPorPieza
 FROM PreciosProductos_773
-ORDER BY PrecioSugerido;
+ORDER BY PrecioPorPieza;
 ```
 
 </p>
@@ -213,13 +216,13 @@ ORDER BY PrecioSugerido;
 ```sql
 # Respuesta
 CREATE VIEW IF NOT EXIST EstadoOrden_773 AS
-(SELECT c.customerNumber, c.customerName, o.orderNumber, o.status
+(SELECT c.customerNumber, c.customerName CustomerName, o.orderNumber OrderNumber, o.status Status
 FROM customers c #izquierda
 LEFT JOIN orders o #derecha
 	ON c.customerNumber = o.customerNumber
 ORDER BY c.customerNumber);
 
-SELECT *
+SELECT CustomerName, OrderNumber, Status
 FROM EstadoOrden_773;
 ```
 
@@ -231,7 +234,7 @@ FROM EstadoOrden_773;
 
 ```sql
 CREATE VIEW IF NOT EXIST ClientesAsociados_773 AS
-(SELECT concat(e.lastName,' ',e.firstName) Empleado, c.customerName, p.checkNumber, p.amount
+(SELECT concat(e.lastName,' ',e.firstName) Empleado, c.customerName Customer, p.checkNumber CheckNumber, p.amount Amount
 FROM employees e
 LEFT JOIN customers c
 	ON e.employeeNumber = c.salesRepEmployeeNumber
@@ -240,7 +243,8 @@ LEFT JOIN payments p
 ORDER BY Empleado);
 
 SELECT *
-FROM ClientesAsociados_773;
+FROM ClientesAsociados_773
+WHERE Amount > 5000;
 ```
 
 </p>
