@@ -1,15 +1,15 @@
-#Ejercicios Finales. Sesión 03
+#Ejercicios - Sesión 03
 USE classicmodels;
 
-											#Ejercicio 01
+# 1
 SELECT o.orderNumber, SUM(od.quantityOrdered) TotalProductos
 FROM orderdetails od
 JOIN orders o
 	ON od.orderNumber = o.orderNumber
 GROUP BY o.orderNumber, o.status
 ORDER BY o.orderNumber;
-    
-											#Ejercicio 02
+
+#2
 SELECT od.orderNumber, o.status, SUM(od.quantityOrdered*od.priceEach) CostoTotal
 FROM orderdetails od
 JOIN orders o
@@ -17,8 +17,7 @@ JOIN orders o
 GROUP BY od.orderNumber, o.status
 ORDER BY od.orderNumber;
 
-
-											#Ejercicio 03
+# 3
 SELECT o.orderNumber, o.orderDate, od.orderLineNumber, p.productName, od.quantityOrdered, od.priceEach
 FROM products p
 JOIN orderdetails od
@@ -27,15 +26,13 @@ JOIN orders o
 	ON od.orderNumber = o.orderNumber
 ORDER BY o.orderNumber;
 
-
-											#Ejercicio 04
+# 4
 SELECT od.orderNumber, p.productName, p.MSRP PrecioSugerido, od.priceEach
 FROM orderdetails od
 JOIN products p
 	ON od.productCode = p.productCode;
     
-    
-											#Ejercicio 05
+# 5
 SELECT c.customerNumber, c.customerName, o.orderNumber, o.status
 FROM customers c #izquierda
 LEFT JOIN orders o #derecha
@@ -43,8 +40,7 @@ LEFT JOIN orders o #derecha
 ORDER BY c.customerNumber;
 #Se ocupa el LEFT JOIN para poder acceder a los datos de todos los clientes, incluso aquellos que no han realizado ninguna orden
 
-
-											#Ejercicio 06
+# 6
 SELECT c.customerNumber, c.customerName
 FROM customers c
 LEFT JOIN orders o
@@ -52,8 +48,7 @@ LEFT JOIN orders o
 WHERE o.orderNumber IS NULL
 ORDER BY c.customerNumber;
 
-
-											#Ejercicio 07
+# 7
 SELECT concat(e.lastName,' ',e.firstName) Empleado, c.customerName, p.checkNumber, p.amount
 FROM employees e
 LEFT JOIN customers c
@@ -62,16 +57,15 @@ LEFT JOIN payments p
 	ON c.customerNumber = p.customerNumber
 ORDER BY Empleado;
 
-
-											#Ejercicio 08
-				#Ejercicio 05
+# 8
+  # Ejercicio 5
 SELECT c.customerNumber, c.customerName, o.orderNumber, o.status
 FROM orders o
 RIGHT JOIN customers c
 	ON c.customerNumber = o.customerNumber
 ORDER BY c.customerNumber;
 
-				#Ejercicio 06
+ # Ejercicio 6
 SELECT c.customerNumber, c.customerName
 FROM orders o
 RIGHT JOIN customers c
@@ -79,7 +73,7 @@ RIGHT JOIN customers c
 WHERE o.orderNumber IS NULL
 ORDER BY c.customerNumber;
 
-				#Ejercicio 07
+  # Ejercicio 7
 SELECT concat(e.lastName,' ',e.firstName) Empleado, c.customerName, p.checkNumber, p.amount
 FROM payments p
 RIGHT JOIN customers c
@@ -92,37 +86,42 @@ ORDER BY Empleado;
 #Sin embargo, la sintaxis de la consulta cambia, pues el "anidamiento" de los joins se debe de realizar de manera inversa.
 
 
-											#Ejercicio 09
-		#Primer vista y consulta
-CREATE VIEW ClientesOrdenes_262 AS
-(SELECT c.customerNumber NumeroCliente, c.customerName NombreCliente, o.orderNumber NumeroOrden, o.status EstadoOrden
-FROM orders o
-RIGHT JOIN customers c
+# 9
+  # Ejercicio 3
+CREATE VIEW PreciosProductos_773 AS
+(SELECT o.orderNumber, o.orderDate, od.orderLineNumber, p.productName NombreProducto, od.quantityOrdered, od.priceEach PrecioPorPieza
+FROM products p
+JOIN orderdetails od
+	ON p.productCode = od.productCode
+JOIN orders o
+	ON od.orderNumber = o.orderNumber
+ORDER BY o.orderNumber);
+
+Select NombreProducto, PrecioPorPieza
+FROM PreciosProductos_773
+ORDER BY PrecioPorPieza;
+
+  # Ejercicio 5
+CREATE VIEW EstadoOrden_773 AS
+(SELECT c.customerNumber, c.customerName CustomerName, o.orderNumber OrderNumber, o.status Status
+FROM customers c #izquierda
+LEFT JOIN orders o #derecha
 	ON c.customerNumber = o.customerNumber
 ORDER BY c.customerNumber);
-SELECT NumeroCliente, NombreCliente
-FROM ClientesOrdenes_262
-WHERE NumeroOrden IS NULL;
 
-		#Segunda vista y consulta
-CREATE VIEW CostoOrden_262 AS
-(SELECT od.orderNumber NumeroOrden, o.status EstadoOrden, SUM(od.quantityOrdered*od.priceEach) CostoTotal
-FROM orderdetails od
-RIGHT JOIN orders o
-	ON od.orderNumber = o.orderNumber
-GROUP BY od.orderNumber, o.status
-ORDER BY od.orderNumber);
-SELECT NumeroOrden, CostoTotal
-FROM CostoOrden_262
-WHERE CostoTotal > 25000
-ORDER BY CostoTotal;
+SELECT CustomerName, OrderNumber, Status
+FROM EstadoOrden_773;
 
-		#Tercer vista y consulta
-CREATE VIEW PreciosProductos_262 AS
-(SELECT od.orderNumber NumeroOrden, p.productName NombreProducto, p.MSRP PrecioSugerido, od.priceEach PrecioPorPieza
-FROM orderdetails od
-RIGHT JOIN products p
-	ON od.productCode = p.productCode);
-Select NombreProducto, PrecioSugerido
-FROM PreciosProductos_262
-ORDER BY PrecioSugerido;
+  # Ejercicio 7
+CREATE VIEW ClientesAsociados_773 AS
+(SELECT concat(e.lastName,' ',e.firstName) Empleado, c.customerName Customer, p.checkNumber CheckNumber, p.amount Amount
+FROM employees e
+LEFT JOIN customers c
+	ON e.employeeNumber = c.salesRepEmployeeNumber
+LEFT JOIN payments p
+	ON c.customerNumber = p.customerNumber
+ORDER BY Empleado);
+
+SELECT *
+FROM ClientesAsociados_773
+WHERE Amount > 5000;
