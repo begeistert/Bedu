@@ -13,3 +13,7 @@
 ### 3. Desarrollo :rocket:
 
 Usando la colección `sample_airbnb.listingsAndReviews`, agrega un filtro que permita obtener todas las publicaciones que tengan 50 o más comentarios, que la valoración sea mayor o igual a 80, que cuenten con conexión a Internet vía cable y estén ubicada en Brazil.
+
+![Evidencia 1](Captura%201.png)
+![Evidencia 2](Captura%202.png)
+![Evidencia 3](Captura%203.png)
