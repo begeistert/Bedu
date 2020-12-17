@@ -11,10 +11,14 @@
 
 1. Usando como base el archivo `movies.dat`, limpiarlo e importar los datos en la tabla `movies` creada en el Reto 1.   
 
-   **Importante:** Este archivo presenta un problema muy común de *encoding*, es decir, la codificación con la que fue definido, no es reconocida por __MySQL__. Para solucionar este problema, elige una codificación diferente al momento de cargar los datos.
+   ![Evidencia](Captura%201.png)
 
-1. Usando como base el archivo `ratings.dat`, limpiarlo e importar los datos en la tabla `ratings` creada en el Reto 2.   
+2. Usando como base el archivo `ratings.dat`, limpiarlo e importar los datos en la tabla `ratings` creada en el Reto 2.   
 
-   **Importante:** Como podrás notar, este archivo tiene demasiados registros, de manera que es normal que la carga sea muy lenta. Esto es algo muy común cuando nos enfrentamos a la carga de archivos. Si ya lleva mucho tiempo y no finaliza, no te preocupes, puedes cancelar la carga.
+   ![Evidencia](Captura%202.png)
 
-1. Finalmente, añade un registro en cada tabla usando `INSERT INTO`.
+3. Finalmente, añade un registro en cada tabla usando `INSERT INTO`.
+   
+   ![Evidencia 1](Captura%203.png)
+   ![Evidencia 2](Captura%204.png)
+   ![Evidencia 3](Captura%205.png)
