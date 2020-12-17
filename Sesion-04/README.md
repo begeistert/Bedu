@@ -46,8 +46,10 @@ A continuación se realizaran algunas operaciones de agregar, modificar y elimin
    ```json
    {id: {$in: ["4000", "4001"]}}
    ```
-
-
+   
+   ![Evidencia 1](Captura%201.png)
+   ![Evidencia 2](Captura%202.png)
+   
 1. Modificar el documento con `id=4001` en la Colección `movies` para que contenga la siguiente información:
 
    ```json
@@ -69,6 +71,7 @@ A continuación se realizaran algunas operaciones de agregar, modificar y elimin
      ]
    }
    ```
-   Luego de presionar el botón __INSERT__ la lista de los dos documentos deberá de ser la siguiente:
+   ![Evidencia 1](Captura%203.png)
+   ![Evidencia 2](Captura%204.png)
 
    
