@@ -13,3 +13,6 @@
 ### 3. Desarrollo :rocket:
 
 Usando las colecciones `comments` y `users`, se requiere conocer el correo y contraseña de cada persona que realizó un comentario. Construye un pipeline que genere como resultado estos datos.
+
+![Evidencia 1](Captura%201.png)
+![Evidencia 2](Captura%202.png)
