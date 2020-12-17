@@ -13,3 +13,6 @@
 ### 3. Desarrollo :rocket:
 
 1. Usando el *pipeline* que generaste en el Reto 2, genera la vista correspondiente.
+
+![Evidencia 1](Captura%201.png)
+![Evidencia 2](Captura%202.png)
