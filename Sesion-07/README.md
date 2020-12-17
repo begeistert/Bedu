@@ -21,3 +21,7 @@ El ejercicio consiste en obtener, por país, el número de películas que hay de
 | USA  | Short  | 10        |
 | USA  | Drama  | 20        |
 | ...  | ...    | ...       |
+
+![Evidencia 1](Captura%201.png)
+![Evidencia 2](Captura%202.png)
+![Evidencia 3](Captura%203.png)
