@@ -15,5 +15,8 @@
 Usando la base de datos `sample_mflix`, proyecta los datos que se solicitan.
 
 - Fecha, nombre y texto de cada comentario.
+![Evidencia](Captura%201.png)
 - Título, elenco y año de cada película.
+![Evidencia](Captura%202.png)
 - Nombre y contraseña de cada usuario.
+![Evidencia](Captura%203.png)
