@@ -18,6 +18,18 @@
  	* [Reto 1](Sesion-04/Reto-01)
   * [Reto 2](Sesion-04/Reto-02)
   * [Reto 3](Sesion-04/Reto-03)
+* [Sesión 5: Fundamentos de MongoDB (*Ejercicios*)](Sesion-05)  
+ 	* [Reto 1](Sesion-05/Reto-01)
+  * [Reto 2](Sesion-05/Reto-02)
+  * [Reto 3](Sesion-05/Reto-03)
+  * [Reto 4](Sesion-05/Reto-04)
+* [Sesión 6: Consultas en MongoDB (*Ejercicios*)](Sesion-06)  
+ 	* [Reto 1](Sesion-06/Reto-01)
+  * [Reto 2](Sesion-06/Reto-02)
+* [Sesión 7: Agregaciones (*Ejercicios*)](Sesion-07)  
+ 	* [Reto 1](Sesion-07/Reto-01)
+  * [Reto 2](Sesion-07/Reto-02)
+  * [Reto 3](Sesion-07/Reto-03)
 
 
 ###### [Iván Montiel Cardona](https://github.com/begeistert)
