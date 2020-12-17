@@ -1,35 +1,43 @@
-## Reto 3: Realizando operaciones con Colecciones e importando datos
+## Ejercicios Sesión 5
 
-### 1. Objetivos :dart:
-- Que el alumno cuente con una Colección para importar datos
-- Que el alumno importe datos en formato CSV a una Colección
+<div style="text-align: justify;">
+
+### 1. Objetivos :dart: 
+
+- Aplicar los conceptos adquiridos durante la sesión.
 
 ### 2. Requisitos :clipboard:
-1. MongoDB Compass instalado
-1. Datos de conexión al Servidor MongoDB
+
+1. MongoDB Compass instalado.
 
 ### 3. Desarrollo :rocket:
-Se deberá de crear colecciones e importar los datos de los archivos `movies.csv` y `ratings.csv`.
 
-1. Crear la colección `movies`
+Las consultas se realizarán sobre la base `sample_training`.
 
-   ![Colección movies](imagenes/colecciones.png)
+Todas las consultas que realices deberás mantenerlas dentro del MongoDB Compass. Para hacer esto, da clic en el botón con los puntos `···` y en `Toogle Query History`. Busca la última consulta y agregala a favoritos presionando el íncono con la estrella :star:.
 
-1. Importar datos a la colección `movies` desde el archivo `movies.csv`
+1. Obtén los datos de contacto de cada compañía.
 
-   Para importar documentos, se usa la opción del menú `Collection > Import Data` que abre un diálogo para seleccionar del tipo de archivo CSV y el archivo mismo.
+2. Obtén el identificador de la clase de cada calificación.
 
-   ![Importando datos csv](imagenes/importando-datos.png)
+3. Obtén el nombre de todas las compañias fundadas en octubre.
 
-   Validar que cada campo tenga nombre y que estén todos los campos, además valida la cantidad de documentos, que en este caso debería de ser 3883.
+4. Obtén el nombre de todas las compañías fundadas en 2008.
 
-1. Crear la colección `ratings`
-   ![Colección movies](imagenes/colecciones-02.png)
+5. Obtén todos los *post* del autor `machine`.
 
-   Seleccionar la colección y continuar.
+6. Obtén todas las calificaciones provenientes de los grupos `357`, `57` y `465`.
 
-1. Importar datos a la colección `ratings` desde el archivo `ratings.csv`
+7. Obtén todas las compañías fundadas en octubre del 2008.
 
-   Para importar usar la opción del menú `Collection > Import Data` que abre un diálogo para seleccionar del tipo de archivo CSV y el archivo mismo.
+8. Obtén todas las compañias con más de 50 empleados. 
 
-   Validar que cada campo tenga nombre y que estén todos los campos, además valida la cantidad de documentos, que en este caso debería de ser 1000209 documentos.
+9. Obtén las rutas con un número de paradas entre 1 y 5.
+
+10. Obtén la empresa con el menor número de empleados.
+
+11. Obtén la empresa con el mayor número de empleados.
+
+12. Obtén el viaje con mayor duración.
+
+13. Obtén el viaje con menor duración.
