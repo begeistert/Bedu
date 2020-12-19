@@ -20,7 +20,7 @@
   * [Reto 3](Sesion-04/Reto-03)
 * [Sesión 5: Fundamentos de MongoDB (*Ejercicios*)](Sesion-05)  
   * [Debate](Sesion-05/Debate)
- 	* [Reto 1](Sesion-05/Reto-01)
+  * [Reto 1](Sesion-05/Reto-01)
   * [Reto 2](Sesion-05/Reto-02)
 * [Sesión 6: Consultas en MongoDB (*Ejercicios*)](Sesion-06)  
  	* [Reto 1](Sesion-06/Reto-01)
